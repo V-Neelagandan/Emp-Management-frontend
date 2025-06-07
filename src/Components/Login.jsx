@@ -13,7 +13,7 @@ const Login = () => {
   const submit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get("http://localhost:7000/Admin_Data");
+      const response = await axios.get("https://emp-manage-server.onrender.com/Admin_Data");
       console.log(response.data[0]);
       if (
         response.data[0].username == username.current.value &&

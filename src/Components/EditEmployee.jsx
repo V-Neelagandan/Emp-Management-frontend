@@ -9,7 +9,7 @@ import CallApi from "./CallApi";
 
 const EditEmployee = () => {
   const { data, fetchData } = CallApi();
-  const url = "http://localhost:7000/Employee_Data/";
+  const url = "https://emp-manage-server.onrender.com/Employee_Data/";
   const navigate = useNavigate();
   const { id } = useParams();
 
