@@ -1,0 +1,103 @@
+.site-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(145deg, #f0f2f5, #dbe4ec);
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+}
+
+.site-wrapper-inner {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cover-container {
+  margin-top: 2rem;
+}
+
+.cover-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #dc3545;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.btn-home {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 25px;
+  border: 2px solid #343a40;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #343a40;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-home:hover {
+  background-color: #343a40;
+  color: white;
+}
+.cover-heading {
+  transition: transform 0.3s ease;
+}
+
+.cover-heading:hover {
+  transform: scale(1.05);
+}
+/* Zoom animation keyframes */
+@keyframes zoomOut {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply to the inner container */
+.site-wrapper-inner {
+  animation: zoomOut 0.7s ease-out;
+}
+
+@media (max-width: 480px) {
+  .site-wrapper {
+    padding: 1rem;
+  }
+
+  .site-wrapper-inner {
+    padding: 1.5rem;
+    max-width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .cover-heading {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .btn-home {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}

@@ -1,0 +1,67 @@
+/* Header container */
+.header {
+  background-image: linear-gradient(to right, #a0bde9, #8686a7, #615568, #352b32, #000000);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  font-family: sans-serif;
+}
+
+/* Navbar brand/title */
+.navbar h4 {
+  margin-right: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  color: #8686a7, #a0bde9;
+  transition: color 0.3s ease;
+  padding: 0 3%;
+}
+
+/* Navbar links */
+.navbar .nav-link {
+  color: black;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #f7f7f8;
+  /* background-color: #e9ecef; */
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* Logout link */
+.navbar .nav-link[onClick] {
+  cursor: pointer;
+}
+
+/* Search input */
+.navbar .form-control {
+  border: 1px solid #ced4da;
+  transition: all 0.3s ease;
+}
+
+.navbar .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Search button */
+.navbar .btn-outline-info {
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.navbar .btn-outline-info:hover {
+  background-color: #0dcaf0;
+  color: white;
+  border-color: #0dcaf0;
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 768px) {
+  .navbar h4 {
+    font-size: 16px;
+  }
+}
