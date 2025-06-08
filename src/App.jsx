@@ -9,7 +9,7 @@ import PageNotFound from "./Components/Main/PageNotFound";
 import ApiContext from "./Components/ApiContext";
 
 const App = () => {
-  const url = "http://localhost:7000/Employee_Data";
+  const url = "https://emp-manage-server.onrender.com/Employee_Data";
   return (
     <>
       <ApiContext.Provider value={{ url }}>
